@@ -45,4 +45,18 @@ subject_marks = c(79, 53, 71, 57, 63, 54, 74, 77, 61, 69)
 cbind(study_hours, subject_marks)
 rbind(study_hours, subject_marks)
 
-
+study_hours = c(89, 69, 45, 75, 63, 54, 23, 25, 57, 46)
+subject_marks = c(79, 53, 71, 57, 63, 54, 74, 77, 61, 69)
+GPA = c(3.4, 3.5, 4.0, 2.5, 3.5, 2.8, 2.9, 2.95, 3.15, 3.75)
+student_mat= cbind(study_hours, subject_marks,GPA)
+row.names(student_mat)=  c(1:10)
+student_mat
+student_mat = c(study_hours,subject_marks, GPA)
+student_matt =matrix(student_mat)
+student_matt
+student_data=matrix(student_matt, byrow=FALSE, nrow = 10)
+student_data
+colnames(student_data)= c("Hours", "marks", "GPA")
+student_data
+rownames(student_data)=c(1:10)
+student_data
