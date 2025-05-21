@@ -60,3 +60,13 @@ colnames(student_data)= c("Hours", "marks", "GPA")
 student_data
 rownames(student_data)=c(1:10)
 student_data
+
+m = seq(1,100, 10)
+m
+m=matrix(m, nrow =2, ncol = 5)
+m
+m=colnames("a", "b", "c", "d", "e")
+m
+colnames(m)= c("a", "b", "c", "d", "e")
+m
+
