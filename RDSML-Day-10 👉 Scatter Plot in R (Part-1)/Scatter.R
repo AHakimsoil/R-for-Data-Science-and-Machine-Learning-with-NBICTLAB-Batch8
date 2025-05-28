@@ -19,11 +19,11 @@ ggplot(dataset, aes(x = wt, y=mpg)) +
 # adding the regression line
 ggplot(dataset, aes(x = wt, y=mpg)) +
   geom_point(size = 3, shape= 1)+
-  geom_smooth(method ="lm" )+
+  geom_smooth(method ="lm", se= FALSE )+
   labs(title = "Scatterplot of a car wt vs car mpg", 
        x = "Wt of Cars (pound)",
        y = "Miles per Gallon (Gallon)")
-
+  
   
 
 
