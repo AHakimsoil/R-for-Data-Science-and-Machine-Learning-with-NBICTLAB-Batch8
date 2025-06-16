@@ -27,6 +27,7 @@ histoplot+geom_vline(aes(xintercept=mean(weight)),
 
 #Histogram with density plot
 
-
-
-
+# Histogram with density plot
+ggplot(dataset, aes(x = weight))+
+  geom_histogram(aes(y = after_stat(density)), color = "black", fill = "white")+
+  geom_density(fill = "red", alpha = .2)
