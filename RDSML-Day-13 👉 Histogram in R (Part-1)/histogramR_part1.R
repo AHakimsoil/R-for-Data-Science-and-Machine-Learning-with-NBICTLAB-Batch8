@@ -31,3 +31,7 @@ histoplot+geom_vline(aes(xintercept=mean(weight)),
 ggplot(dataset, aes(x = weight))+
   geom_histogram(aes(y = after_stat(density)), color = "black", fill = "white")+
   geom_density(fill = "red", alpha = .2)
+
+#Changing line color and fill color
+ggplot(dataset, aes(x = weight))+
+  geom_histogram(color = "darkblue", fill = "lightblue")
