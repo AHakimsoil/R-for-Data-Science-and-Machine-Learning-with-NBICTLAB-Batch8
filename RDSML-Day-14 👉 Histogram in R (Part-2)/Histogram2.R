@@ -45,4 +45,14 @@ histo2plot= ggplot(dataset,aes(x=weight, fill=sex))+
   
 histo2plot
 
+#Using custom color palettes
+histo2plot + scale_alpha_manual(values = c("#999999", "E69F00"))+
+  scale_fill_manual(values = c("#999999", "#E69F00") )
+
+#Using brewer color palettes
+histo2plot + scale_colour_brewer(palette ="Dark2" )+
+  scale_fill_brewer(palette = "Dark2")
+
+
+#Using a grey scale
 
