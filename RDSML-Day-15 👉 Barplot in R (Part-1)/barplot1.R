@@ -47,7 +47,8 @@ mycardata=mtcars
 # To make a bar plot of counts, we will use mtcars dataset
 
 ggplot(data=mycardata, aes(x= factor(cyl)))+
-  geom_bar(stat = "count")
+  geom_bar(stat = "count", width = 0.75, fill= "steelblue")+
+  theme_minimal()
 
 
 
