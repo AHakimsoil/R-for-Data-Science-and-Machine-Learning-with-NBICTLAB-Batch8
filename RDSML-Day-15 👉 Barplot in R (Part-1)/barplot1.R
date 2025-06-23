@@ -36,8 +36,21 @@ ggplot(data=dataset, aes(x=dose, y=len))+
 #inside bar
 ggplot(data=dataset, aes(x=dose, y=len))+
   geom_bar(stat = "identity",fill= "steelblue")+
-  geom_text(aes(label=len), vjust =1.6, size = 3, color= "#000000")+
+  geom_text(aes(label=len), vjust =1.6, size = 3, color= "white")+
   theme_minimal()
+
+#my car data mtcars
+
+mycardata=mtcars
+
+#barplot of counts
+# To make a bar plot of counts, we will use mtcars dataset
+
+ggplot(data=mycardata, aes(x= factor(cyl)))+
+  geom_bar(stat = "count")
+
+
+
 
 
 
