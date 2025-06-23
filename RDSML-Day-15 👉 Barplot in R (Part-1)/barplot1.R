@@ -26,3 +26,28 @@ ggplot(data=dataset, aes(x=dose, y=len))+
   geom_bar(stat = "identity", color= "blue",fill= "steelblue")+
   theme_minimal()
 
+#Bar plot with labels
+#outside bar
+ggplot(data=dataset, aes(x=dose, y=len))+
+  geom_bar(stat = "identity",fill= "steelblue")+
+  geom_text(aes(label=len), vjust =-0.5, size = 3, color= "#000000")+
+  theme_minimal()
+
+#inside bar
+ggplot(data=dataset, aes(x=dose, y=len))+
+  geom_bar(stat = "identity",fill= "steelblue")+
+  geom_text(aes(label=len), vjust =1.6, size = 3, color= "#000000")+
+  theme_minimal()
+
+
+
+
+
+
+
+
+
+
+
+
+
