@@ -15,9 +15,14 @@ ggplot(data=dataset, aes(x=dose, y=len))+
 
 #Changing the width of bars
 ggplot(data=dataset, aes(x=dose, y=len))+
-  geom_bar(stat = "identity")
+  geom_bar(stat = "identity", width = 0.75)
   
+#Changing Bar Color
+ggplot(data=dataset, aes(x=dose, y=len))+
+  geom_bar(stat = "identity", color= "blue",fill= "white", width = 0.75)
 
-
-
+# Minimal theme with blue fill color
+ggplot(data=dataset, aes(x=dose, y=len))+
+  geom_bar(stat = "identity", color= "blue",fill= "steelblue")+
+  theme_minimal()
 
