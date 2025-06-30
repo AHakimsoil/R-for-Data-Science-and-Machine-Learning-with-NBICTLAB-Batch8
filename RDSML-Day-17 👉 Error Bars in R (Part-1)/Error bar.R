@@ -21,4 +21,7 @@ data_summary= function(data, varname,groupnames){
   data_sum = rename(data_sum, c("mean"= varname))
 }
 
-
+d_summary = data_summary(tooth_data, varname = "len", groupnames = C("supp", "dose"))
+                         
+                         
+                         
