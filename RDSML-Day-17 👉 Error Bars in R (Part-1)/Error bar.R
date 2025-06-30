@@ -11,3 +11,14 @@ sum =function(a, b, c, d){
 }
 
 sum(23, 25, 89, 87)
+
+data_summary= function(data, varname,groupnames){
+  require(plyr)
+  summary_func = function(x, col){
+    c(mean =mean(x[[col]], na.rm =TRUE), sd= sd(x[[cil]], na.rm = TRUE))
+  }
+  data_sum = ddply(data, groupnames, .fun=summary_func, varname)
+  data_sum = rename(data_sum, c("mean"= varname))
+}
+
+
