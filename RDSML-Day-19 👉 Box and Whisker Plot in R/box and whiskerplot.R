@@ -3,7 +3,7 @@ myData = ToothGrowth
 myData
 
 #Converting the variable dose from numeric to factor variable
-myData$dose=as.factor(myData$dose)
+#myData$dose=as.factor(myData$dose)
 install.packages("ggplot2")
 library(ggplot2)
 
@@ -24,4 +24,29 @@ ggplot(myData, aes(x=dose,y=len))+
 
 ggplot(myData, aes(x=dose,y=len))+
   geom_boxplot(outlier.color = "red", outlier.shape = 8, outlier.size = 4)
+
+#Basic box plot
+
+ggplot(myData, aes(x=dose,y=len))+
+  geom_boxplot()
+
+#changing the display item in box plot
+ggplot(myData, aes(x=dose,y=len))+
+  geom_boxplot(outlier.color = "red", outlier.shape = 8, outlier.size = 4)+
+  scale_x_discrete(limits=c("2"))
+
+
+#changing box plot line colors by groups
+ggplot(myData, aes(x=dose,y=len, color= dose))+
+  geom_boxplot()
+
+#Changing the order of items in the legend
+
+ggplot(myData, aes(x=dose,y=len, color= dose))+
+  geom_boxplot()+
+  scale_x_discrete(limit= c("2", "0.5", "1"))
+
+
+
+
 
