@@ -46,7 +46,13 @@ ggplot(myData, aes(x=dose,y=len, color= dose))+
   geom_boxplot()+
   scale_x_discrete(limit= c("2", "0.5", "1"))
 
+#Box plot with multiple groups
+ggplot(myData, aes(x=dose,y=len, fill=supp))+
+  geom_boxplot()
 
+#Changing the box position
+ggplot(myData, aes(x=dose,y=len, fill=supp))+
+  geom_boxplot(position= position_dodge(1))
 
 
 
