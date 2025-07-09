@@ -23,7 +23,10 @@ ggplot(df, aes(x=wt, y=mpg, color = cyl))+
   theme(plot.title = element_text(face="bold", size=16, hjust =0.5),
         axis.title = element_text(face="bold", size=14),
         axis.text=element_text(size=12),
-        legend.position = "right" )
+        legend.position = "right",
+        legend.title = element_text(face="bold"),
+        legend.text = element_text(size=12)
+        )
         
 
 
