@@ -12,7 +12,7 @@ df$cyl =as.factor(df$cyl)
 
 #styling plot
 
-ggplot(df, aes(x=wt, y=mpg, color = cyl))+
+plot= ggplot(df, aes(x=wt, y=mpg, color = cyl))+
   geom_point(size=3)+
   scale_color_viridis_d(name="cylinders")+
   labs( 
@@ -27,7 +27,11 @@ ggplot(df, aes(x=wt, y=mpg, color = cyl))+
         legend.title = element_text(face="bold"),
         legend.text = element_text(size=12)
         )
-        
+plot
+
+#saving the plot for publication
+
+ggsave("publication_ggplot.png", plot, width=6, height= 4, dpi=300)
 
 
 
