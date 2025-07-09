@@ -20,7 +20,11 @@ ggplot(df, aes(x=wt, y=mpg, color = cyl))+
       x= "weight (1000 lbs)",
       y= "Miles per Gallon")+
   theme_classic(base_size = 14, base_family = "serif")+
-  theme(plot.title = element_text(face="bold", size=16, hjust =0.5))
+  theme(plot.title = element_text(face="bold", size=16, hjust =0.5),
+        axis.title = element_text(face="bold", size=14),
+        axis.text=element_text(size=12),
+        legend.position = "right" )
+        
 
 
 
