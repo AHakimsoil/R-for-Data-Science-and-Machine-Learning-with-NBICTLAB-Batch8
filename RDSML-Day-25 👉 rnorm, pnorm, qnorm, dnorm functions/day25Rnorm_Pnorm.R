@@ -33,3 +33,14 @@ pnorm(-1.64)
 qnorm(0.5)
 qnorm(0.024)
 
+#dnorm
+# Y axis value for z=0
+
+dnorm(0)
+
+#lets use dnorm to draw the normal distribution
+
+zvalues = seq(-4.0, 4.0, by =0.1)
+dvalues=dnorm(zvalues)
+plot(zvalues, dvalues)
+
