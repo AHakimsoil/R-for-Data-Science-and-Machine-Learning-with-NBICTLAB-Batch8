@@ -26,5 +26,10 @@ pnorm(0)
 
 pnorm(-1.96)
 
+pnorm(-1.64)
 
+# qnorm
+
+qnorm(0.5)
+qnorm(0.024)
 
